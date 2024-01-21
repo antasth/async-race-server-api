@@ -54,7 +54,9 @@ server.patch('/engine', (req, res) => {
   }
 
   if (!db.garage.find((car) => car.id === +id)) {
-    return res.status(404).send('Car with such id was not found in the garage.')
+    return res
+      .status(404)
+      .send(`Car with id:${id} was not found in the garage.`)
   }
 
   const distance = 500000
