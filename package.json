@@ -1,7 +1,7 @@
 {
-  "name": "mock-server-api",
+  "name": "async-race-server-api",
   "version": "1.0.0",
-  "description": "Mock server API",
+  "description": "Async race server API",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
